@@ -5,7 +5,7 @@ const int MAX = 1000;
 
 int ignite[MAX];
 
-int floor(int end, int K) {
+int floor(int end, int K){
 	if (end < 0) { return -1; }
 
 	if (ignite[end] > K) return floor(end - 1, K);
@@ -19,7 +19,7 @@ int ceiling(int start, int end, int K) {
 	if (ignite[start] >= K) return ignite[start];
 }
 
-int main(void) {
+int main(void){
 	int N, K;
 	cin >> N;
 	for (int i = 0; i < N; i++) {

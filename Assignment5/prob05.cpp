@@ -28,7 +28,7 @@ int offset[4][2] = {
     {1, 0}, {0, -1}
 };
 
-int dfs(int x, int y) {
+int dfs(int x, int y){
     if (x < 0 || x >= n || y < 0 || y >= n || maze[x][y] == WALL || visited[x][y]) {
         return 0;
     }
@@ -53,7 +53,7 @@ int dfs(int x, int y) {
     return count;
 }
 
-int main() {
+int main(){
     read_maze();
 
     int answer = dfs(0, 0);

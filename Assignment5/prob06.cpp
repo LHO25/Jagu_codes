@@ -7,7 +7,7 @@ int N, K;
 
 // pos: 현재 처리 중인 비트 위치
 // flipsLeft: 앞으로 뒤집어야 할 비트 개수
-void binaryDistance(int pos, int flipsLeft) {
+void binaryDistance(int pos, int flipsLeft){
     // 뒤집을 개수가 음수면 불가능
     if (flipsLeft < 0 || (N - pos < flipsLeft)) {
         return;
@@ -35,7 +35,7 @@ void binaryDistance(int pos, int flipsLeft) {
 
 }
 
-int main() {   
+int main(){   
     cin >> s >> K;
     N = (int)s.size();
     
